@@ -1,0 +1,12 @@
+script(src='js/lib/jquery-1.11.0.min.js')
+script(src='js/lib/jquery.cookie.js')
+script(src="js/lib/jquery.stringifyjson.min.js")
+if dev
+  script(src='js/mc/Ajax.js')
+  script(src='js/mc/Util.js')
+  script(src='js/mc/Url.js')
+  
+
+else
+  - ver = "js/compiled.min." + version + '.js'
+  script(src=ver)

@@ -1,0 +1,13 @@
+block locals
+
+doctype html
+html
+  head
+    include ../includes/head.jade
+    include ../includes/base-styles.jade
+  body
+    #content
+      block content
+    include ../includes/base-scripts.jade
+    script.
+      new LayoutModule();

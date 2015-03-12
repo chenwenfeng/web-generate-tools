@@ -1,0 +1,10 @@
+link(rel='stylesheet' href='css/lib/reset.css')
+
+if dev
+  link(rel='stylesheet' href='css/mc/less/layout.css')
+else
+  - ver = "css/compiled.min." + version + '.css'
+  link(rel="stylesheet" href=ver)
+<!--[if lt IE 9]>
+script(src='js/lib/html5shiv.js')
+<![endif]-->

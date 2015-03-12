@@ -1,0 +1,2 @@
+# Assignment:
+number   = 42

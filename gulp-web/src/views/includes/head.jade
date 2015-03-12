@@ -1,0 +1,23 @@
+meta(charset='utf-8')
+title= title
+meta(http-equiv="X-UA-Compatible" content="IE=edge")
+meta(http-equiv="cache-control" content="no-cache")
+meta(http-equiv="expires" content="0")
+meta(http-equiv="pragma" content="no-cache")
+meta(Http-Equiv="Pragma-directive: no-cache")
+meta(Http-Equiv="Cache-directive: no-cache")
+meta(name='author' content='')
+meta(name='description' content='')
+meta(name='copyright' content='')
+link(href='favicon.ico' rel='icon' type='image/x-icon')
+meta(name="viewport" content="width=device-width, user-scalable=yes" charset="utf8")
+meta#viewport(name="viewport")
+script.
+  (function(doc) {
+    var viewport = document.getElementById('viewport');
+    if ( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
+        viewport.setAttribute("content", "initial-scale=0.4");
+    } else if ( navigator.userAgent.match(/iPad/i) ) {
+        viewport.setAttribute("content", "initial-scale=1");
+    }
+  }(document));
